@@ -19,39 +19,29 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # 1. สร้างเกม Pac-Man ก่อน (ระบบจะสร้างโฟลเดอร์ dist ให้)
+      # 1. สร้างเกม Pac-Man
       - name: generate pacman
         uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: ${{ github.repository_owner }}
 
-      # ตรวจสอบว่ามีโฟลเดอร์ dist แน่นอน
-      - name: Ensure dist folder exists
-        run: mkdir -p dist
-
-      # 2. สร้างเกมตีบล็อก Brick Breaker (ใช้ @main และ output_svg)
-      - name: generate brick breaker
-        uses: cyprieng/github-brick-breaker@main
-        continue-on-error: true
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          output_svg: dist/bricks.svg
-          theme: github-dark
-
-      # 3. สร้างตาราง 3D Isometric
+      # 2. สร้างตาราง 3D Isometric
       - name: generate 3D contribution graph
         uses: yoshi389111/github-profile-3d-contrib@0.7.0
-        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
 
-      - name: copy 3D files to dist
+      # 3. สร้างเกมตีบล็อกด้วยคำสั่ง npx และรวมไฟล์ทั้งหมดเข้าโฟลเดอร์ dist
+      - name: generate brick breaker and organize files
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          mkdir -p dist
           if [ -d "profile-3d-contrib" ]; then
             cp -r profile-3d-contrib/* dist/
           fi
+          npx github-brick-breaker --username ${{ github.repository_owner }} --token ${{ secrets.GITHUB_TOKEN }} --output dist/bricks.svg || true
 
       # 4. ส่งไฟล์ทั้งหมดใน dist ขึ้นไปที่ branch output
       - name: push all games to the output branch
