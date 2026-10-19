@@ -32,16 +32,27 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
 
-      # 3. สร้างเกมตีบล็อกด้วยคำสั่ง npx และรวมไฟล์ทั้งหมดเข้าโฟลเดอร์ dist
-      - name: generate brick breaker and organize files
+      # 3. ดึงไฟล์ .svg ของตาราง 3D ออกมาจากโฟลเดอร์ย่อย และสร้างเกมตีบล็อกใส่ใน dist โดยตรง
+      - name: organize 3D files and generate brick breaker
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          INPUT_GITHUB_USER_NAME: ${{ github.repository_owner }}
+          INPUT_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          INPUT_OUTPUT_SVG: ${{ github.workspace }}/dist/bricks.svg
+          INPUT_THEME: github-dark
         run: |
-          mkdir -p dist
+          mkdir -p ${{ github.workspace }}/dist
+          
+          # ค้นหาไฟล์ .svg ทั้งหมดในโฟลเดอร์ 3D แล้วคัดลอกมาไว้ที่ dist ชั้นนอกสุด
           if [ -d "profile-3d-contrib" ]; then
-            cp -r profile-3d-contrib/* dist/
+            find profile-3d-contrib -name "*.svg" -exec cp {} ${{ github.workspace }}/dist/ \;
           fi
-          npx github-brick-breaker --username ${{ github.repository_owner }} --token ${{ secrets.GITHUB_TOKEN }} --output dist/bricks.svg || true
+          
+          # สร้างเกมตีบล็อกโดยเซฟกลับมาที่โฟลเดอร์หลัก
+          git clone https://github.com/cyprieng/github-brick-breaker.git /tmp/brick
+          cd /tmp/brick
+          npm install
+          npm run build || true
+          node dist/index.js || npx ts-node src/index.ts || true
 
       # 4. ส่งไฟล์ทั้งหมดใน dist ขึ้นไปที่ branch output
       - name: push all games to the output branch
