@@ -17,6 +17,16 @@
 <br/>
 
 
+<!-- เกมตีบล็อก Brick Breaker -->
+<div align="center">
+  <img alt="Brick Breaker Game" src="https://raw.githubusercontent.com/peephuwit/Peephuwit/output/bricks.svg" width="100%">
+</div>
+
+
+<!-- ตาราง 3D โหมดมืด -->
+<div align="center">
+  <img alt="3D Contribution Graph" src="https://raw.githubusercontent.com/peephuwit/Peephuwit/output/profile-night-view.svg" width="100%">
+</div>
 
 
 
