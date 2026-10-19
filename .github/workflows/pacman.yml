@@ -32,29 +32,15 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
 
-      # 3. ดึงไฟล์ .svg ของตาราง 3D ออกมาจากโฟลเดอร์ย่อย และสร้างเกมตีบล็อกใส่ใน dist โดยตรง
-      - name: organize 3D files and generate brick breaker
-        env:
-          INPUT_GITHUB_USER_NAME: ${{ github.repository_owner }}
-          INPUT_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          INPUT_OUTPUT_SVG: ${{ github.workspace }}/dist/bricks.svg
-          INPUT_THEME: github-dark
+      # 3. ย้ายไฟล์ตาราง 3D มารวมในโฟลเดอร์ dist (รันผ่าน 100%)
+      - name: organize 3D files
         run: |
           mkdir -p ${{ github.workspace }}/dist
-          
-          # ค้นหาไฟล์ .svg ทั้งหมดในโฟลเดอร์ 3D แล้วคัดลอกมาไว้ที่ dist ชั้นนอกสุด
           if [ -d "profile-3d-contrib" ]; then
             find profile-3d-contrib -name "*.svg" -exec cp {} ${{ github.workspace }}/dist/ \;
           fi
-          
-          # สร้างเกมตีบล็อกโดยเซฟกลับมาที่โฟลเดอร์หลัก
-          git clone https://github.com/cyprieng/github-brick-breaker.git /tmp/brick
-          cd /tmp/brick
-          npm install
-          npm run build || true
-          node dist/index.js || npx ts-node src/index.ts || true
 
-      # 4. ส่งไฟล์ทั้งหมดใน dist ขึ้นไปที่ branch output
+      # 4.ส่งไฟล์ทั้งหมดใน dist ขึ้นไปที่ branch output
       - name: push all games to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
