@@ -1,9 +1,9 @@
 name: generate games
 
 on:
-  schedule: # รันอัตโนมัติทุกๆ 24 ชั่วโมง
+  schedule:
     - cron: "0 */24 * * *"
-  workflow_dispatch: # กดรันเองได้
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -13,36 +13,42 @@ jobs:
     permissions:
       contents: write
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
 
     steps:
-      # 1. สร้างเกม Pac-Man (ไฟล์จะถูกสร้างไว้ในโฟลเดอร์ dist)
-      - name: generate pacman-contribution-graph.svg
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # สร้างโฟลเดอร์ dist รอไว้ก่อนเพื่อป้องกัน Error
+      - name: Create dist folder
+        run: mkdir -p dist
+
+      # 1. สร้างเกม Pac-Man
+      - name: generate pacman
         uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: ${{ github.repository_owner }}
 
-       # 2. สร้างเกมตีบล็อก Brick Breaker (เก็บในโฟลเดอร์ dist)
+      # 2. สร้างเกมตีบล็อก Brick Breaker (แก้ไขพารามิเตอร์ให้ถูกต้อง)
       - name: generate brick breaker
-        uses: cyprieng/github-brick-breaker@main
+        uses: cyprieng/github-brick-breaker@v1
         with:
           github_user_name: ${{ github.repository_owner }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           output_path: dist/bricks.svg
           theme: github-dark
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # 3. สร้างตาราง 3D Isometric (สร้างไว้ในโฟลเดอร์ profile-3d-contrib แล้วค่อยย้ายมารวมที่ dist)
+      # 3. สร้างตาราง 3D Isometric (ถ้าไม่เอา 3D ลบส่วนที่ 3 นี้ออกได้ครับ)
       - name: generate 3D contribution graph
-        uses: yoshi389111/github-profile-3d-contrib@latest
+        uses: yoshi389111/github-profile-3d-contrib@0.7.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
 
-      - name: move 3D graph to dist folder
-        run: mv profile-3d-contrib/* dist/
+      - name: copy 3D files to dist
+        run: cp -r profile-3d-contrib/* dist/
 
-      # ส่งไฟล์ทั้งหมดใน dist ขึ้นไปเก็บที่ branch output
+      # ส่งไฟล์ทั้งหมดขึ้นไปที่ branch output
       - name: push all games to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
