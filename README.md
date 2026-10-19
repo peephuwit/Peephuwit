@@ -17,11 +17,6 @@
 
   <br/><br/>
 
-  <!-- 2. เกมตีบล็อก Brick Breaker -->
-  <img alt="Brick Breaker Game" src="https://raw.githubusercontent.com/peephuwit/Peephuwit/output/bricks.svg" width="100%">
-
-  <br/><br/>
-
   <!-- 3. ตาราง 3D แบบไฟนีออนสีเขียว (เปลี่ยนชื่อไฟล์ท้ายลิงก์ได้) -->
   <img alt="3D Contribution Graph" src="https://raw.githubusercontent.com/peephuwit/Peephuwit/output/profile-night-green.svg" width="100%">
 
