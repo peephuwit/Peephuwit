@@ -19,36 +19,41 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # สร้างโฟลเดอร์ dist รอไว้ก่อนเพื่อป้องกัน Error
-      - name: Create dist folder
-        run: mkdir -p dist
-
-      # 1. สร้างเกม Pac-Man
+      # 1. สร้างเกม Pac-Man ก่อน (ระบบจะสร้างโฟลเดอร์ dist ให้)
       - name: generate pacman
         uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: ${{ github.repository_owner }}
 
-      # 2. สร้างเกมตีบล็อก Brick Breaker (แก้ไขพารามิเตอร์ให้ถูกต้อง)
+      # ตรวจสอบว่ามีโฟลเดอร์ dist แน่นอน
+      - name: Ensure dist folder exists
+        run: mkdir -p dist
+
+      # 2. สร้างเกมตีบล็อก Brick Breaker (ใช้ @main และ output_svg)
       - name: generate brick breaker
-        uses: cyprieng/github-brick-breaker@v1
+        uses: cyprieng/github-brick-breaker@main
+        continue-on-error: true
         with:
           github_user_name: ${{ github.repository_owner }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          output_path: dist/bricks.svg
+          output_svg: dist/bricks.svg
           theme: github-dark
 
-      # 3. สร้างตาราง 3D Isometric (ถ้าไม่เอา 3D ลบส่วนที่ 3 นี้ออกได้ครับ)
+      # 3. สร้างตาราง 3D Isometric
       - name: generate 3D contribution graph
         uses: yoshi389111/github-profile-3d-contrib@0.7.0
+        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
 
       - name: copy 3D files to dist
-        run: cp -r profile-3d-contrib/* dist/
+        run: |
+          if [ -d "profile-3d-contrib" ]; then
+            cp -r profile-3d-contrib/* dist/
+          fi
 
-      # ส่งไฟล์ทั้งหมดขึ้นไปที่ branch output
+      # 4. ส่งไฟล์ทั้งหมดใน dist ขึ้นไปที่ branch output
       - name: push all games to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
