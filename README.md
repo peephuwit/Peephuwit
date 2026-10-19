@@ -7,25 +7,25 @@
 
 ### Games:
 
-<!-- เกม Pac-Man -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/peephuwit/Peephuwit/output/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/peephuwit/Peephuwit/output/pacman-contribution-graph.svg">
-  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/peephuwit/Peephuwit/output/pacman-contribution-graph.svg">
-</picture>
-
-<br/>
-
-
-<!-- เกมตีบล็อก Brick Breaker -->
 <div align="center">
+
+  <!-- 1. เกม Pac-Man -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/peephuwit/Peephuwit/output/pacman-contribution-graph-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/peephuwit/Peephuwit/output/pacman-contribution-graph.svg">
+    <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/peephuwit/Peephuwit/output/pacman-contribution-graph.svg" width="100%">
+  </picture>
+
+  <br/><br/>
+
+  <!-- 2. เกมตีบล็อก Brick Breaker -->
   <img alt="Brick Breaker Game" src="https://raw.githubusercontent.com/peephuwit/Peephuwit/output/bricks.svg" width="100%">
-</div>
 
+  <br/><br/>
 
-<!-- ตาราง 3D โหมดมืด -->
-<div align="center">
-  <img alt="3D Contribution Graph" src="https://raw.githubusercontent.com/peephuwit/Peephuwit/output/profile-night-view.svg" width="100%">
+  <!-- 3. ตาราง 3D แบบไฟนีออนสีเขียว (เปลี่ยนชื่อไฟล์ท้ายลิงก์ได้) -->
+  <img alt="3D Contribution Graph" src="https://raw.githubusercontent.com/peephuwit/Peephuwit/output/profile-night-green.svg" width="100%">
+
 </div>
 
 
