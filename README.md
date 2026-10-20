@@ -1,7 +1,7 @@
 <h1 align="center">Hi , I'm Peephuwit Witwarothai</h1>
 
 
-### <code>> Tech Stack</code>
+### <code>> Tech Stack :</code>
 
 <table align="center" width="100%">
   <thead>
@@ -43,7 +43,7 @@
 </table>
 
 
-### <code>> Games:</code>
+### <code>> Games :</code>
 
 <div align="center">
 
