@@ -1,7 +1,7 @@
 <h1 align="center">Hi , I'm Peephuwit Witwarothai</h1>
 
   
-### <code>> Tech Stack</code>
+### <code>> Tech Stack:</code>
 
 | Category | Technologies |
 | :--- | :--- |
@@ -11,7 +11,7 @@
 | **DevOps & Tools** | [![Tools](https://skillicons.dev/icons?i=docker,linux,git,github,figma)](https://skillicons.dev) |
 
 
-### <code>> Games</code>
+### <code>> Games:</code>
 
 <div align="center">
 
