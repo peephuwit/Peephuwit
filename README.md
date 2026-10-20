@@ -1,6 +1,10 @@
 <h1 align="center">Hi , I'm Peephuwit Witwarothai</h1>
 
 
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=1,12,24&height=250&section=header&text=PEEPHUWIT&fontSize=70&fontColor=ffffff&fontAlignY=40&desc=Developer%20•%20Creative designer&descSize=20&descAlignY=62" width="100%" />
+</div>
+
 ### <code>> Tech Stack :</code>
 
 <table align="center" width="100%">
