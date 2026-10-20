@@ -35,7 +35,7 @@
       <!-- DevOps & Tools (5) -->
       <td align="center">
         <a href="https://skillicons.dev">
-          <img src="https://skillicons.dev/icons?i=docker,linux,git,github,visual studio code,figma" alt="DevOps & Tools" />
+          <img src="https://skillicons.dev/icons?i=docker,linux,git,github,vscode,figma" alt="DevOps & Tools" />
         </a>
       </td>
     </tr>
