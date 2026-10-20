@@ -5,29 +5,42 @@
   <thead>
     <tr>
       <th align="center" width="25%">Languages</th>
-      <th align="center" width="25%">Frontend & Design</th>
-      <th align="center" width="25%">Backend</th>
+      <th align="center" width="25%">Frontend & UI</th>
+      <th align="center" width="25%">Backend & Database</th>
       <th align="center" width="25%">DevOps & Tools</th>
     </tr>
   </thead>
   <tbody>
     <tr>
+      <!-- Languages (6) -->
       <td align="center">
-        <img src="https://skillicons.dev/icons?i=cpp,java,py,js,ts" alt="Languages" />
+        <a href="https://skillicons.dev">
+          <img src="https://skillicons.dev/icons?i=cpp,java,py,php,js,ts" alt="Languages" />
+        </a>
       </td>
+      <!-- Frontend & UI (5) -->
       <td align="center">
-        <img src="https://skillicons.dev/icons?i=html,css,nextjs,figma" alt="Frontend & Design" />
+        <a href="https://skillicons.dev">
+          <img src="https://skillicons.dev/icons?i=html,css,tailwind,react,nextjs" alt="Frontend & UI" />
+        </a>
       </td>
+      <!-- Backend & Database (6) -->
       <td align="center">
-        <img src="https://skillicons.dev/icons?i=nodejs,express" alt="Backend" />
+        <a href="https://skillicons.dev">
+          <img src="https://skillicons.dev/icons?i=nodejs,express,mysql,postgres,sqlite,wordpress" alt="Backend & Database" />
+        </a>
       </td>
+      <!-- DevOps & Tools (5) -->
       <td align="center">
-        <img src="https://skillicons.dev/icons?i=docker,linux,git,github" alt="DevOps & Tools" />
+        <a href="https://skillicons.dev">
+          <img src="https://skillicons.dev/icons?i=docker,linux,git,github,figma" alt="DevOps & Tools" />
+        </a>
       </td>
     </tr>
   </tbody>
 </table>
----
+
+  
 
 
 ### Games:
