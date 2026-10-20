@@ -43,7 +43,7 @@
 </table>
 
 
-### <code>> Games :</code>
+### <code>> Game :</code>
 
 <div align="center">
 
