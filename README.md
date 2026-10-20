@@ -44,17 +44,11 @@
 | :--- | :--- |
 | **Languages** | [![Languages](https://skillicons.dev/icons?i=cpp,java,py,php,js,ts)](https://skillicons.dev) |
 | **Frontend** | [![Frontend](https://skillicons.dev/icons?i=html,css,tailwind,react,nextjs)](https://skillicons.dev) |
-| **Backend & DB** | [![Backend](https://skillicons.dev/icons?i=nodejs,express,mysql,postgres,sqlite,wordpress)](https://skillicons.dev) |
+| **Backend & Database** | [![Backend](https://skillicons.dev/icons?i=nodejs,express,mysql,postgres,sqlite,wordpress)](https://skillicons.dev) |
 | **DevOps & Tools** | [![Tools](https://skillicons.dev/icons?i=docker,linux,git,github,figma)](https://skillicons.dev) |
 
 
-### <code>> Tech Stack</code>
 
-<div align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,tailwind,js,ts,react,nextjs,nodejs,express,php,py,java,cpp,mysql,postgres,sqlite,wordpress,docker,linux,git,github,figma&perline=11" alt="Tech Stack" />
-  </a>
-</div>
 
 ### Games:
 
