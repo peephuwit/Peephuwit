@@ -11,7 +11,7 @@
 | **DevOps & Tools** | [![Tools](https://skillicons.dev/icons?i=docker,linux,git,github,figma)](https://skillicons.dev) |
 
 
-### Games:
+### <code>> Games</code>
 
 <div align="center">
 
