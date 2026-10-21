@@ -9,10 +9,8 @@
   />
 </div>
 
-<table align="center" width="100%">
   <tr>
     <td align="center" style="padding: 15px;">
-      <b>📫 Connect with me</b>
       <br/><br/>
       <!-- Email -->
       <a href="peephuwit@gmail.com">
@@ -33,22 +31,6 @@
       <br/>
     </td>
   </tr>
-</table>
-
----
-
-### <code>> PORTFOLIO Website :</code>
-<table width="80%">
-  <tr>
-    <td align="center">
-      <br/>
-      https://portfolio-pphw.vercel.app/
-      <br/><br/>
-    </td>
-  </tr>
-</table>
-
-
 
 ---
 
