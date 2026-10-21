@@ -21,8 +21,8 @@
         <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=About.me&logoColor=white" alt="Portfolio" />
       </a>
       <!-- Discord -->
-      <a href="https://discord.gg/pp.pphw" target="_blank">
-        <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" />
+      <a href="https://discord.com/users/603060052223459351" target="_blank">
+        <img src="https://img.shields.io/badge/Discord-Chat%20With%20Me-5865F2?style=for-the-badge&logo=discord&logoColor=white"alt="Discord" />
       </a>
       <!-- Instagram หรือ Twitter/X -->
       <a href="https://instagram.com/pp.pphw__" target="_blank">
@@ -31,7 +31,6 @@
       <br/>
     </td>
   </tr>
-
 ---
 
 ### <code>> Tech Stack :</code>
