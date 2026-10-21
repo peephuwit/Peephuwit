@@ -11,9 +11,9 @@
 
   <tr>
     <td align="center" style="padding: 15px;">
-      <br/><br/>
+      <br>
       <!-- Email -->
-      <a href="peephuwit@gmail.com">
+      <a href="mailto:peephuwit@gmail.com">
         <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
       </a>
       <!-- Portfolio / Website -->
@@ -21,7 +21,7 @@
         <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=About.me&logoColor=white" alt="Portfolio" />
       </a>
       <!-- Discord -->
-      <a href="https://discord.gg/YOUR_INVITE" target="_blank">
+      <a href="https://discord.gg/pp.pphw" target="_blank">
         <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" />
       </a>
       <!-- Instagram หรือ Twitter/X -->
