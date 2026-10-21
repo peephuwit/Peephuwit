@@ -2,7 +2,13 @@
   <img src="./assets/Banner.png" alt="Header Banner" width="100%" />
 </div>
 
-<h1 align="center">Hi , I'm Peephuwit Witwarothai</h1>
+<div align="center">
+  <img
+    src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=4000&pause=1200&color=7DD3FC&center=true&vCenter=true&width=750&lines=Hello,+I'm+Peephiuwit+Witwarothai,+Developer,+Creative+Designer"
+    alt="Animated introduction"
+  />
+</div>
+---
 
 ### <code>> PORTFOLIO Website :</code>
 https://portfolio-pphw.vercel.app/
