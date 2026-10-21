@@ -12,12 +12,11 @@
 ---
 
 ### <code>> PORTFOLIO Website :</code>
-<table width="100%">
+<table width="80%">
   <tr>
     <td align="center">
       <br/>
       https://portfolio-pphw.vercel.app/
-      />
       <br/><br/>
     </td>
   </tr>
