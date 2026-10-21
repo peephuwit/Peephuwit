@@ -15,16 +15,19 @@
   <a href="mailto:peephuwit@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
   </a>
- 
+  &nbsp;&nbsp;
+  
   <!-- Instagram -->
   <a href="https://instagram.com/pp.pphw__" target="_blank">
     <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
   </a>
-
+  &nbsp;&nbsp;
+  
   <!-- Discord -->
   <a href="https://discord.com/users/603060052223459351" target="_blank">
     <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" />
   </a>
+  &nbsp;&nbsp;
   
 </div>
   
@@ -32,9 +35,9 @@
 
 ### <code>> PORTFOLIO Website :</code>
  <!-- Portfolio Website -->
-  <a href="https://portfolio-pphw.vercel.app/" target="_blank">
+  <<<a href="https://portfolio-pphw.vercel.app/" target="_blank">
     <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
-  </a>
+  </a>>>
   
 
 ---
