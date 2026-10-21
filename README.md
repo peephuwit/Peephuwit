@@ -3,6 +3,13 @@
 </div>
 
 <div align="center">
+  <img
+    src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&duration=2800&pause=1000&color=7DD3FC&center=true&vCenter=true&width=700&lines=Hello,+I'm+Peephiuwit+Witwarothai.+;--<<Developer>>--;--<<Creative+Designer>>--"
+    alt="Animated introduction"
+  />
+</div>
+
+<div align="center">
 
   <!-- Gmail -->
   <a href="mailto:peephuwit@gmail.com">
@@ -31,6 +38,8 @@
     <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
   </a>
   &nbsp;
+
+---
 
 ### <code>> Tech Stack :</code>
 
