@@ -3,36 +3,34 @@
 </div>
 
 <div align="center">
-  <img
-    src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&duration=2800&pause=1000&color=FFFFFF&center=true&vCenter=true&width=700&lines=Hello,+I'm+Peephiuwit+Witwarothai.;--<<Developer>>--;-<<Creative+Designer>>--"
-    alt="Animated introduction"
-  />
-</div>
 
-  <tr>
-    <td align="center" style="padding: 15px;">
-      <br>
-      <!-- Email -->
-      <a href="mailto:peephuwit@gmail.com">
-        <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
-      </a>
-      <!-- Portfolio / Website -->
-      <a href="https://portfolio-pphw.vercel.app/" target="_blank">
-        <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=About.me&logoColor=white" alt="Portfolio" />
-      </a>
-      <!-- Discord -->
-      <a href="https://discord.com/users/603060052223459351" target="_blank">
-        <img src="https://img.shields.io/badge/Discord-Chat%20With%20Me-5865F2?style=for-the-badge&logo=discord&logoColor=white"alt="Discord" />
-      </a>
-      <!-- Instagram หรือ Twitter/X -->
-      <a href="https://instagram.com/pp.pphw__" target="_blank">
-        <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
-      </a>
-      <br/>
-    </td>
-  </tr>
+  <!-- Gmail -->
+  <a href="mailto:peephuwit@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
+  </a>
+  &nbsp;
+ 
+  <!-- Discord -->
+  <a href="https://discord.com/users/603060052223459351" target="_blank">
+    <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" />
+  </a>
+  &nbsp;
+  
+  <!-- Instagram -->
+  <a href="https://instagram.com/pp.pphw__" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+  </a>
+
+</div>
   
 ---
+
+### <code>> PORTFOLIO Website :</code>
+ <!-- Portfolio Website -->
+  <a href="https://portfolio-pphw.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
+  </a>
+  &nbsp;
 
 ### <code>> Tech Stack :</code>
 
