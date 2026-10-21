@@ -17,9 +17,7 @@ https://portfolio-pphw.vercel.app/
   <tr>
     <td align="center">
       <br/>
-      <img
-        src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=18&duration=2800&pause=1000&color=7DD3FC&center=true&vCenter=true&width=700&lines=Hello,+I'm+Peephiuwit+Witwarothai+👋;Developer;Creative+Designer"
-        alt="Animated introduction"
+      https://portfolio-pphw.vercel.app/
       />
       <br/><br/>
     </td>
