@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/banner.png" alt="Header Banner" width="100%" />
+  <img src="./assets/Banner.png" alt="Header Banner" width="100%" />
 </div>
 
 <h1 align="center">Hi , I'm Peephuwit Witwarothai</h1>
