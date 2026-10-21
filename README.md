@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="./assets/banner.png" alt="Header Banner" width="100%" />
+</div>
+
 <h1 align="center">Hi , I'm Peephuwit Witwarothai</h1>
 
 ### <code>> PORTFOLIO Website :</code>
