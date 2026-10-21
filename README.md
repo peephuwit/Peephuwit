@@ -4,7 +4,7 @@
 
 <div align="center">
   <img
-    src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&duration=2800&pause=1000&color=7DD3FC&center=true&vCenter=true&width=700&lines=Hello,+I'm+Peephiuwit+Witwarothai;Developer;Creative+Designer"
+    src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&duration=2800&pause=1000&color=FFFFFF&center=true&vCenter=true&width=700&lines=Hello,+I'm+Peephiuwit+Witwarothai.;--<<Developer>>--;-<<Creative+Designer>>--"
     alt="Animated introduction"
   />
 </div>
