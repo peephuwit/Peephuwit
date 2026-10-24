@@ -33,7 +33,7 @@
   
 ---
 
-### <code>➤ PORTFOLIO Website :</code>
+### <code>➤ 𝗣𝗢𝗥𝗧𝗙𝗢𝗟𝗜𝗢 𝗪𝗲𝗯𝘀𝗶𝘁𝗲 :</code>
  <!-- Portfolio Website -->
   <a href="https://portfolio-pphw.vercel.app/" target="_blank">
     <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
@@ -42,7 +42,7 @@
 
 ---
 
-### <code>➤ Tech Stack :</code>
+### <code>➤ 𝗧𝗲𝗰𝗵 𝗦𝘁𝗮𝗰𝗸 :</code>
 
 <table align="center" width="100%">
   <thead>
@@ -85,7 +85,7 @@
 
 ---
 
-### <code>➤ Game :</code>
+### <code>➤ 𝗚𝗮𝗺𝗲 :</code>
 
 <div align="center">
 
